@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consulta Medico</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="bem-vindo">
+        <h1>Seja bem vindo</h1>
+      </div>
+      <div class="app-terminado">
+        <h1>Programa terminado</h1>
+        <button onclick="location.reload()">Reiniciar</button>
+      </div>
+      <div class="loading">
+        <div class="spinner-border"></div>
+      </div>
+      <div class="container">
+        <h1>Consulta Médico</h1>
+        <form>
+          <label for="turno">Turno desejado</label>
+          <input
+            type="text"
+            list="turnos"
+            placeholder="Ex. Manhã,Tarde,Noite"
+          />
+          <label id="erro"></label>
+          <datalist id="turnos">
+            <!-- Aqui ira aparecer os turnos -->
+          </datalist>
+          <button>Escolher turno</button>
+          <label id="msg"></label>
+        </form>
+      </div>
+    </div>
+
+    <script src="./script.js" type="module"></script>
+  </body>
+</html>
